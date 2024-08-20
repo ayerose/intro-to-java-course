@@ -6,7 +6,7 @@ public class App {
     }
 
     public static String concatenate(String word1, String word2, String word3) {
-        // TODO: Write code that concatenates the input parameters and returns the result
+        // TODO: Write code that concatenates the input parameters and returns the result.
         throw new RuntimeException("Not implemented");
     }
 
