@@ -2,6 +2,10 @@ package com.cbfacademy.cars;
 
 public class App {
     public static void main(String[] args) {
-        // TODO: Display details of all cars in showroom
+        Showroom showroom = new Showroom();
+
+        for (Car car : showroom.getCars()) {
+            System.out.println(car.getDetails());
+        }
     }
 }

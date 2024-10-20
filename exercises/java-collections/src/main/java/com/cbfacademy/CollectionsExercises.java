@@ -12,7 +12,21 @@ public class CollectionsExercises {
         //  - add 4 as the 3rd element of the list
         //  - invoke the method element() on the list and print the result on the screen
         //  - return the list
-        throw new RuntimeException("Not implemented");
+
+        LinkedList<Integer> list = new LinkedList<>();
+        list.addFirst(4);
+        list.add(5);
+        list.add(6);
+        list.add(8);
+        list.add(2);
+        list.add(9);
+        list.addLast(2);
+        list.add(2, 4);
+
+        System.out.print(list.element());
+        return list;
+
+
     }
 
     public Stack<Integer> useStack() {
@@ -23,7 +37,19 @@ public class CollectionsExercises {
         //  - invoke the method pop() on the stack and print the result on the screen
         //  - invoke the push(4) method on the stack
         //  - return the stack
-        throw new RuntimeException("Not implemented");
+        Stack<Integer> stack = new Stack<>();
+        stack.push(5);
+        stack.push(6);
+        stack.push(8);
+        stack.push(9);
+
+        System.out.print(stack.firstElement());
+        System.out.print(stack.peek());
+        System.out.print(stack.pop());
+
+        stack.push(4);
+
+        return stack;
     }
 
     public ArrayDeque<Integer> useArrayDeque() {
@@ -34,7 +60,19 @@ public class CollectionsExercises {
         //  - invoke the method poll() on the queue and print the result on the screen
         //  - invoke the element() method on the queue and print the result on the screen
         //  - return the queue
-        throw new RuntimeException("Not implemented");
+
+        ArrayDeque<Integer> deque = new ArrayDeque<>();
+        deque.add(5);
+        deque.add(6);
+        deque.add(8);
+        deque.add(9);
+
+        System.out.print(deque.getFirst());
+        System.out.print(deque.getLast());
+        System.out.print(deque.poll());
+        System.out.print(deque.element());
+
+        return deque;
     }
 
     public HashMap<Integer, String> useHashMap() {
@@ -49,7 +87,21 @@ public class CollectionsExercises {
         //  - determine the set of values from the map and print it on the screen
         //  - determine whether the map contains "English" as a language and print the result on the screen
         //  - return the map
-        throw new RuntimeException("Not implemented");
+
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "TypeScript");
+        map.put(2, "Kotlin");
+        map.put(3, "Python");
+        map.put(4, "Java");
+        map.put(5, "JavaScript");
+        map.put(6, "Rust");
+
+        System.out.print(map.keySet());
+        System.out.print(map.values());
+        System.out.print(map.containsValue("English"));
+
+        return map;
+
     }
 
     public String getName() {

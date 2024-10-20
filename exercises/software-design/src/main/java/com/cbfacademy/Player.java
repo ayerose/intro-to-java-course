@@ -17,4 +17,5 @@ public interface Player extends Rollable {
      * @param name The name of the player.
      */
     void setName(String name);
+    int roll();
 }
